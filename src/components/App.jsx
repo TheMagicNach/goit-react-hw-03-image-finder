@@ -50,7 +50,7 @@ class App extends Component {
             this.setState({ isLoading: false });
           
           } else {
-            const totalCount = this.state.images.length;
+           
            
             
           }
@@ -66,7 +66,7 @@ class App extends Component {
   };
 
  handleLoadMore = async () => {
-    const { currentPage, query, images } = this.state;
+    const { currentPage, query} = this.state;
     const nextPage = currentPage + 1;
 
     this.setState({ isLoading: true });
@@ -89,7 +89,7 @@ class App extends Component {
     this.setState({ isLoading: false });
 
 
-    const totalCount = this.state.images.length;
+  
   };
 
 
